@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FocusBoard – typed task tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="card">
+    <h1>Focus<span>Board</span></h1>
+    <p class="sub">Typed with TypeScript. Shipped for everyone.</p>
+
+    <div class="add-row">
+      <input id="title" type="text" placeholder="What needs doing?" autocomplete="off" />
+      <button id="add">Add</button>
+    </div>
+
+    <div class="filters">
+      <button class="chip active" data-filter="all">All</button>
+      <button class="chip" data-filter="todo">To do</button>
+      <button class="chip" data-filter="in-progress">In progress</button>
+      <button class="chip" data-filter="done">Done</button>
+    </div>
+
+    <ul id="list"></ul>
+    <p id="empty" class="empty">No tasks here yet.</p>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
